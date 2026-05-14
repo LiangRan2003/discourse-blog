@@ -34,7 +34,7 @@ function App() {
         </div>
         <div className="header-right">
           <button className="icon-btn"><Search size={20} /></button>
-          <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Me" alt="User Avatar" className="avatar" />
+          <img src="/discourse-blog/avatar.jpg" alt="User Avatar" className="avatar" />
         </div>
       </header>
 
@@ -128,7 +128,7 @@ function App() {
               {/* Fake reply input */}
               <div className="post" style={{ opacity: 0.5 }}>
                 <div className="post-sidebar">
-                  <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Me" alt="Me" className="post-avatar" />
+                  <img src="/discourse-blog/avatar.jpg" alt="Me" className="post-avatar" />
                 </div>
                 <div className="post-content-wrap">
                   <div style={{ padding: '15px', border: '1px solid #ddd', borderRadius: '4px', color: '#888' }}>
