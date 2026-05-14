@@ -106,6 +106,24 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              {/* Render Comments */}
+              {selectedTopic.comments && selectedTopic.comments.map(comment => (
+                <div className="post" key={comment.id}>
+                  <div className="post-sidebar">
+                    <img src={comment.author.avatar} alt={comment.author.name} className="post-avatar" />
+                  </div>
+                  <div className="post-content-wrap">
+                    <div className="post-header">
+                      <span className="post-author">{comment.author.name}</span>
+                      <span className="post-time">{comment.time}</span>
+                    </div>
+                    <div className="post-body">
+                      {comment.content}
+                    </div>
+                  </div>
+                </div>
+              ))}
               
               {/* Fake reply input */}
               <div className="post" style={{ opacity: 0.5 }}>

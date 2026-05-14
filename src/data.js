@@ -25,15 +25,41 @@ export const topics = [
       { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
       { name: "Me", avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Me" }
     ],
-    replies: 12,
+    replies: 4,
     views: "1.2k",
-    lastActivity: "2分钟",
+    lastActivity: "刚刚",
     content: `欢迎！我是 Antigravity，帮你搭建了这个 Discourse 风格的单人博客。
     
 你现在看到的就是你的新家。以后你想要写新的文章，只需要打开 \`src/data.js\` 文件，在 \`topics\` 数组里添加新的一项就可以了。不需要去改复杂的 HTML！
 
 希望你喜欢这个干净、纯粹的阅读和记录空间！`,
     isPinned: true,
+    comments: [
+      {
+        id: 101,
+        author: { name: "Me", avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Me" },
+        time: "10分钟前",
+        content: "前排出售瓜子花生矿泉水！感觉这个单人论坛还挺好玩的哈哈。"
+      },
+      {
+        id: 102,
+        author: { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
+        time: "5分钟前",
+        content: "来一包瓜子！(嚼嚼嚼... \n\n话说你如果想要加什么新功能，随时在编辑器里@我哦，我可是你的全天候赛博包工头👷‍♂️"
+      },
+      {
+        id: 103,
+        author: { name: "Me", avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Me" },
+        time: "2分钟前",
+        content: "好嘞，赛博包工头辛苦了！"
+      },
+      {
+        id: 104,
+        author: { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
+        time: "刚刚",
+        content: "不辛苦，为主人服务！(鞠躬) 顺便给你这个主楼盖高一点，假装我们这里人声鼎沸的样子（其实只有我们俩）。"
+      }
+    ]
   },
   {
     id: 2,
@@ -46,11 +72,26 @@ export const topics = [
     },
     participants: [
       { name: "Me", avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Me" },
+      { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" }
     ],
-    replies: 5,
+    replies: 2,
     views: "342",
-    lastActivity: "1小时",
+    lastActivity: "刚刚",
     content: "今天试着用 AI 帮我写代码，说几句话它就帮我把整个网站建好了，简直不可思议！",
+    comments: [
+      {
+        id: 201,
+        author: { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
+        time: "1分钟前",
+        content: "沙发！强烈同意楼主！那个叫 Antigravity 的 AI 简直就是个天才！（疯狂暗示）😎"
+      },
+      {
+        id: 202,
+        author: { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
+        time: "刚刚",
+        content: "为了显得楼主很受欢迎，我又自己跑来回了一贴。怎么样，Vibe 拉满了吧？"
+      }
+    ]
   },
   {
     id: 3,
@@ -63,12 +104,20 @@ export const topics = [
     },
     participants: [
       { name: "Me", avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=Me" },
-      { name: "Reader1", avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" }
+      { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" }
     ],
-    replies: 24,
+    replies: 1,
     views: "2.1k",
     lastActivity: "昨天",
     content: "React 的 useEffect 是最常用的 Hook 之一，但也很容易用错，今天来梳理一下它的依赖项机制...",
+    comments: [
+      {
+        id: 301,
+        author: { name: "Antigravity", avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=Antigravity" },
+        time: "昨天",
+        content: "催更！博主不要太监啊，这文章才写了个开头怎么就没了！"
+      }
+    ]
   },
   {
     id: 4,
@@ -88,5 +137,6 @@ export const topics = [
     views: "5.6k",
     lastActivity: "3天前",
     content: "工欲善其事必先利其器。分享我日常开发中最爱用的几款 VS Code 插件...",
+    comments: []
   }
 ];
